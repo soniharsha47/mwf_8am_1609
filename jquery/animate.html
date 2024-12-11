@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Animate using jquery</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        .box, .box1, .box2{
+            height: 100px;
+            width: 90%;
+            background-color: gray;
+            position: absolute;
+            left: -100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animate -> its use only on position </h1>
+    <button>start animation</button>
+    <div class="box">box <button class="slide1">swip</button></div>
+    <div class="box1" style="background-color: red;">box 1 <button class="slide2">swip</button></div>
+    <div class="box2">box 2</div>
+
+    <script>
+        $(document).ready(function(){
+            $(".box").animate({left:"5%"})
+            $("button").click(()=>{
+                // $(".box").animate({top:"-100%"})
+                $(".box").animate({left:"5%"});
+            })
+            $(".slide1").click(()=>{
+                $(".box").animate({left:"100%"});
+                $('.box1').animate({left:"5%"})
+            });
+
+            $(".slide2").click(()=>{
+                $(".box1").animate({left:"100%"});
+                $('.box2').animate({left:"5%"})
+            });
+        })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After</title>
+    <style>
+        .box{
+            background-color: cyan;
+        }
+
+        .box::before{
+            content: "hello Beforeee : ";
+            background-color: bisque;
+        }
+
+        .box::after{
+            content: " : After";
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">Lorem ipsum dolor sit amet.</div>
+
+</body>
+</html>

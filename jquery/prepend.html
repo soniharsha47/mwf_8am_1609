@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>prepend</title>
+</head>
+<body>
+    <h1>Fade in & out</h1>
+    <button id="Append">prepend</button>
+    <ul class="para">
+        <li>list 1</li>
+    </ul>
+
+    <script>
+        $(document).ready(()=>{
+            $('#Append').click(()=>{
+                $('.para').prepend('<li>append from jquery</li>')
+            });
+        })
+    </script>
+</body>
+</html>
+
+<!-- Built To-Do application using this till 09/12/2024  -->

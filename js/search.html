@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search the index</title>
+</head>
+<body>
+    <h1>Search index</h1>
+    <form name="myform" onsubmit="return valid()" method="post">
+        <input type="text   " id="email" placeholder="Enter Your Email" />
+        <span id="uerr"></span>
+        <input type="submit" value="Submit"/>
+    </form>
+    <script>
+        function valid(){
+            var email = document.forms['myform']['email'].value;
+
+            var findath = email.search('@')
+            var preindex = email.search('@')-1
+            var postindex = email.search('@') + 1
+            console.log(findath, preindex, postindex, email.length )
+
+            // if(findath==-1){
+            //     document.getElementById('uerr').innerHTML = "Invalid Email Please provide @";
+            //     return false;
+            // }
+            // else if(preindex<=0){
+            //     document.getElementById('uerr').innerHTML = "Invalid Email Please provide valid username";
+            //     return false;
+            // }
+            // else if(postindex==email.length){
+            //     document.getElementById('uerr').innerHTML="Invalid Email Please provide valid company";
+            //     return false;
+            // }
+            if(findath==-1 |preindex<=0 | postindex==email.length ){
+                document.getElementById('uerr').innerHTML = "Invalid Email Please provide valid username and company";
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+        // var email = 'grras@123.com';
+        // // it work locally -> unique 
+        // // if u search string it will return first char's index
+
+        // console.log(email.search('@'))
+
+    </script>
+    
+</body>
+</html>
+
+<!-- 
+    1: email -> email provide
+    2: url -> ..://..
+-->

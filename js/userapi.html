@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User API</title>
+    <style>
+        #container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        #result{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>List User</h1>
+
+    <div id="container">
+
+    </div>
+
+    <script>
+        async function apifetchuser() {
+            var api = await fetch("https://jsonplaceholder.typicode.com/users");
+            var djs = await api.json();
+
+            console.log(djs)
+            var userid = prompt('Enter User id');
+            var result=''
+            for(i=0;i<djs.length;i++){
+                // document.getElementById('container').innerHTML=djs[i]['id'];
+               if(userid==djs[i]['id']){
+                result += `<p id='result'>id: ${djs[i]['id']} <br/>
+                        Name : ${djs[i]['name']} <br/>
+                        Email : ${djs[i]['email']} <br/>
+                        Phone : ${djs[i]['phone']} <br/>
+                        city : ${djs[i]['address']['city']}
+                    </p>`
+               }
+            }
+            document.getElementById('container').innerHTML=result
+        }
+        apifetchuser();
+    </script>
+    
+</body>
+</html>

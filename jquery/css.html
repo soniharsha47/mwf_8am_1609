@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>CSS</title>
+    <style>
+        #para{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fade in & out</h1>
+    <button id="hidee">Click to apply css</button>
+    
+    <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, nihil beatae tenetur facilis non dicta eius dolore accusantium nulla aliquam?</p>
+
+    <script>
+        $(document).ready(()=>{
+            $('#hidee').click(()=>{
+                $("#para").css("backgroundColor","red");
+            });
+        })
+    </script>
+</body>
+</html>

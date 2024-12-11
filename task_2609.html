@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2609</title>
+    <style>
+        .main{
+            /* border:1px solid black; */
+            width: 400px;
+            height: 400px;
+        }
+        .box1, .box2, .box3, .box4{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            
+        }
+        .box2, .box4{
+            margin-top: -202px;
+            margin-left: 201px;
+        }
+        
+        .box1-1, .box2-1, .box3-1, .box4-1{
+            height: 200px;
+            width: 200px;
+            border-radius: 0% 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1" >
+            <div class="box1-1" style="background-color: purple;"></div>
+        </div>
+        <div class="box2" >
+            <div class="box2-1" style="background-color: rgb(228, 191, 228);border-radius: 100% 0%;"></div>
+        </div>
+        <div class="box3" style="margin-top:-1px;" >
+            <div class="box3-1" style=" background-color: rgb(228, 191, 228);border-radius: 100% 0%;"></div>
+        </div>
+        <div class="box4" >
+            <div class="box4-1" style="background-color: purple;"></div>
+        </div>
+    </div>
+</body>
+</html>

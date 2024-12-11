@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layout</title>
+    <style>
+        body{margin: 0;}
+        header{
+            height: 70px;
+            background-color: black;
+        }
+        nav{
+            background-color: gray;
+            height: 50px;
+        }
+        .resultshow{
+            height: 40px;
+            border-bottom: 1px solid gray;
+            box-shadow: 1px 1px 5px gray;
+        }
+        .container{
+            display: flex;
+        }
+        .leftpart{
+            width: 15%;
+            height: 500px;
+            background-color: gray;
+        }
+        .rightpart{
+            background-color: bisque;
+            height: 500px;
+            width: 85%;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <main>
+        <div class="resultshow"></div>
+        <div class="container">
+            <div class="leftpart"></div>
+            <div class="rightpart"></div>
+        </div>
+    </main>
+</body>
+</html>

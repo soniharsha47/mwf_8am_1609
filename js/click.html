@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click</title>
+</head>
+<body>
+
+    <div id="box" onclick="boxdata()">click me</div>
+
+    <script>
+        function boxdata(){
+            document.getElementById("box").style.background = "red";
+            document.getElementById("box").style.fontSize='50px';
+            document.getElementById("box").style.color = "white";
+            document.getElementById("box").innerHTML='You click this box';
+        }
+    </script>
+    
+</body>
+</html>

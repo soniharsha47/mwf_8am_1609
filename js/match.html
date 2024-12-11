@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>match the string</title>
+</head>
+<body>
+    <h1>Match the string</h1>
+    <form name="myform" onsubmit="return valid()" method="post">
+        <input type="text" id="uname" placeholder="Enter User name" />
+        <span id="uerr"></span>
+        <input type="submit" value="Submit"/>
+    </form>
+
+    <script>
+        function valid() {
+
+            var uname  = document.forms['myform']['uname'].value;
+
+            var lower = uname.match(/[a-z_]/g);
+            var upper = uname.match(/[A-Z]/g);
+            var digit = uname.match(/[0-9]/g);
+            var spchar = uname.match(/[!-/:-@[-^`{-~]/g)
+
+
+            console.log(lower);
+            console.log(upper);
+            console.log(digit);
+            console.log(spchar);
+
+            if(spchar!=null){
+                document.getElementById("uerr").innerHTML = "Username should not contain any special characters";
+                return false;
+            }
+            else if(digit!=null){
+                document.getElementById("uerr").innerHTML = "Username should not contain any digits";
+                return false;
+            }
+            else if(upper!=null){
+                document.getElementById("uerr").innerHTML = "Username should not contain any Upper characters";
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+        function vaied1(){
+            
+            var uname  = document.forms['myform']['uname'].value;
+
+            if((uname.match(/[A-Z]/g)!=null) | (uname.match(/[0-9]/g)!=null) | (uname.match(/[!-/:-@[-^`{-~]/g)!=null)){
+                document.getElementById('uerr').innerHTML="You can enter only _ and Lower alphabets!!!"
+            }
+            else{
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>

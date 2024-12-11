@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        body{margin: 0;}
+        header{
+            height: 70px;
+            background-color: black;
+        }
+        nav{
+            background-color: gray;
+            height: 50px;
+        }
+        .resultshow{
+            height: 40px;
+            border-bottom: 1px solid gray;
+            box-shadow: 1px 1px 5px gray;
+        }
+        .container{
+            display: flex;
+        }
+        .leftpart{
+            width: 15%;
+            height: 500px;
+            background-color: gray;
+        }
+        .rightpart{
+            background-color: bisque;
+            height: 500px;
+            width: 85%;
+        }
+
+        /* tablets */
+        @media (max-width:1300px){
+            body{
+                font-size: 15px;
+            }
+            .container{
+                display: block;
+            }
+            .leftpart{
+                width: 100%;
+                height: 50px;
+                display: flex;
+            }
+            .rightpart{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (max-width:768px){
+            .container{
+                display: block;
+            }
+            .leftpart{
+                width: 100%;
+                height: 50px;
+                display: flex;
+            }
+            .rightpart{
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <main>
+        <div class="resultshow"></div>
+        <div class="container">
+            <div class="leftpart"></div>
+            <div class="rightpart">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae odit placeat commodi perspiciatis! Dolorum quam modi eum ipsum reiciendis necessitatibus eveniet ea sapiente praesentium quisquam. Sint, quo labore recusandae odit totam incidunt maiores accusantium quam alias dignissimos. Nisi, quam maiores quas iste iure dolorum blanditiis expedita doloribus veritatis unde? Sed totam amet eos soluta excepturi hic consectetur fugiat ullam nam, alias ex tempora voluptatum voluptas ad. Architecto ipsa quisquam a quo quos sed quis ex consequatur. Animi debitis saepe minus. Voluptatem, amet voluptatibus, ratione iusto accusamus rem at necessitatibus quaerat alias labore animi, tenetur perferendis culpa natus exercitationem maxime ut dolores numquam corrupti quo! Odit quasi rem architecto, magnam corporis libero, earum quidem nihil, non molestiae eum. Itaque nemo quisquam, molestiae voluptatum harum nesciunt porro, sit accusantium magni explicabo recusandae culpa excepturi suscipit consequuntur. A pariatur iure voluptatem possimus voluptatibus nam facilis cumque illo, accusamus quaerat. Laboriosam sequi vel ad amet dignissimos odio deserunt tenetur praesentium, dicta earum iure quasi dolor cupiditate voluptatibus at officiis voluptates unde in cumque. Impedit quo itaque veniam dicta eaque. Voluptates aliquam in corporis pariatur optio at fuga incidunt dolorum illum vel repellendus itaque ratione repudiandae temporibus dicta iure delectus id maiores possimus, error repellat doloremque ad! Mollitia non nulla, voluptates eaque neque ut quaerat ratione rem officia minus aliquid quas asperiores quia fugit vitae facilis quo. Iusto, aliquam repudiandae. Maiores distinctio odit quos eligendi dolorum perferendis cum perspiciatis dolore, debitis doloremque tenetur. Id cum omnis debitis similique iusto explicabo assumenda laborum laudantium necessitatibus nulla saepe aperiam sapiente ipsum temporibus, dolorem doloremque repellat tempore suscipit nam fugiat aliquid perspiciatis molestiae sequi nemo? Perspiciatis nihil fuga molestiae hic aliquam impedit mollitia. Minus, id necessitatibus ipsam magnam quibusdam deserunt asperiores! Accusantium tempora at, totam nisi quam impedit ipsa, magni enim corporis dignissimos eaque facere! Aperiam impedit, expedita iste quisquam nihil repudiandae sapiente dolorem minima dolor est molestias ea quaerat cupiditate maxime adipisci natus voluptate nemo error? Ad ea totam blanditiis, dolor ab sunt minima modi facere cupiditate unde laborum impedit quos explicabo saepe eligendi beatae, deleniti architecto est. Neque tempora vero amet nesciunt dolor sequi, praesentium ea maxime, provident perspiciatis inventore in optio odio voluptatem impedit eum blanditiis. Non nihil vitae, corporis fugit beatae explicabo libero doloribus doloremque molestiae quam. Quasi accusantium delectus vero nemo! Deleniti, ab inventore vel quo dicta aliquam, aut earum voluptatibus laboriosam non sed quos at exercitationem quas dolorum ipsum illum corrupti est reiciendis vitae? Fugiat odio eveniet nemo, qui officiis molestiae aspernatur veniam iste vel accusantium iure nisi magnam. Necessitatibus, dolorem aspernatur. Omnis corporis dolorem quidem molestias expedita, odio facere excepturi ullam impedit nulla a ab delectus eius mollitia? Fugit, dolorem perferendis vitae distinctio eveniet doloremque accusamus molestias corrupti quibusdam iusto quis! Blanditiis praesentium nesciunt assumenda tempora ipsum in possimus molestias sit delectus laborum quam voluptatum quibusdam perferendis suscipit ratione dolor accusamus iusto ducimus, earum exercitationem! Maxime unde libero tempore veritatis optio ipsum vel incidunt molestiae autem aut sint, soluta aspernatur deserunt? At quam vero error ratione excepturi tempore delectus blanditiis esse.</div>
+        </div>
+        <h1>Media Query :- according to purticular display the layout and design will be change so fetch your display </h1>
+        <h2>Destop :- >1300px <br>
+            tables :- 767px - 1300px <br>
+            Mobiles :- 400-767px 
+        </h2>
+    </main>
+</body>
+</html>

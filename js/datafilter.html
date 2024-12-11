@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data filter</title>
+</head>
+<body>
+    <h1>Data Filter </h1>
+
+    <script>
+        var data = [
+            {name:"John",age:25,gender:"male",Group:"A"},
+            {name:"Jane",age:30,gender:"female",Group:"B"},
+            {name:"Jim",age:35,gender:"male",Group:"A"},
+            {name:"Jill",age:20,gender:"female",Group:"B"},
+            {name:"Jack",age:40,gender:"male",Group:"A"},
+            {name:"Jenny",age:45,gender:"female",Group:"B"},
+            {name:"Jen",age:50,gender:"female",Group:"A"},
+            {name:"Jared",age:55,gender:"male",Group:"B"},
+            {name:"Jasmine",age:60,gender:"female",Group:"A"},
+            {name:"Jason",age:65,gender:"male",Group:"B"},
+            {name:"Mike",age:65,gender:"male",Group:"B"}
+        ]
+
+        // console.table(data);
+        var userchoice = 'B';
+        // filter data and print single single data/dict using loop
+        for(i=0;i<data.length;i++){
+            // console.log(data[i])
+            if(userchoice==data[i]['age'] | userchoice==data[i]['Group']){
+                console.log(data[i])
+            }
+        }
+    </script>
+    
+</body>
+</html>

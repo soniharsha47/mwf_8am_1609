@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>slide up/down</title>
+    <style>
+        #para{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fade in & out</h1>
+    <button id="hidee">Click to hide</button>
+    <button id="showw">Click to show para</button>
+    <button id="toggle">Click to toggle</button>
+    <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, nihil beatae tenetur facilis non dicta eius dolore accusantium nulla aliquam?</p>
+
+    <script>
+        $(document).ready(()=>{
+            $('#hidee').click(()=>{
+                $("#para").slideUp(3000)
+            });
+
+            $("#showw").click(()=>{
+                $("#para").slideDown(5000)
+            });
+
+            $("#toggle").click(()=>{
+                $("#para").slideToggle(3000)
+            });
+        })
+    </script>
+</body>
+</html>

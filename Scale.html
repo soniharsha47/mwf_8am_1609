@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale </title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: gray;
+            margin: 5%;
+            transition-duration: 2s;
+            transform: scaleX(0.1);
+            transform-origin: left;
+            overflow: hidden;
+            font-size: 20px;
+        }
+        .box:hover{
+            transform: scaleX(1.2);
+        }
+
+        .hov{
+            color: goldenrod;
+            font-size: 50px;
+            width: 190px;
+        }
+        .hov::after{
+            content: '';
+            display: block;
+            height: 10px;
+            width: 190px;
+            background-color: goldenrod;
+            transform: scaleX(0);
+            transition-duration: 2s;
+            transform-origin: left;
+        }        
+        .hov:hover::after{
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Lorem ipsum dolor sit amet.</div>
+
+    <div class="hov">Click me</div>
+</body>
+</html>
